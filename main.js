@@ -3,3 +3,10 @@ let lyricArray = ['Know this I will return to this land Rebuild where the ruins 
 `So understand Don't waste your time always searching for those wasted years Face up, make your stand Realize you're living in the golden years`,
 `No, no we can't let them take anymore No we can't let them take anymore We've the land of the free`];
 
+
+const generateRandomLyric = () => {
+    let randomNumber = Math.floor(Math.random() * 3);
+    return lyricArray[randomNumber];
+}
+
+console.log(generateRandomLyric());
